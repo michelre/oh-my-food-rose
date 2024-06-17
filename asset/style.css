@@ -1,4 +1,35 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
 
 
+body {
+    display: flex; 
+    flex-direction: column;
+}
 
+.main-container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+/**** Style du header ****/
+.header__search {
+    background-color: #EAEAEA;
+}
+
+.header__subtitle {
+    border: red solid 1px;
+}
 

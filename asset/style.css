@@ -1,6 +1,6 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,6 @@
     --tertiary-color: #99E2D0;
 }
 
-
 body {
     display: flex; 
     flex-direction: column;
@@ -20,16 +19,139 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 768px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
 /**** Style du header ****/
-.header__search {
+.header__location {
     background-color: #EAEAEA;
 }
 
-.header__subtitle {
-    border: red solid 1px;
+.header__title {
+    margin: 20px;
 }
 
+.header__subtitle {
+    margin: 20px;
+}
+
+.header__button {
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-bottom: var(--secondary-color);
+    border-right: var(--secondary-color);
+    width: 218px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    left: 82px;
+    color: white;
+}
+
+/***style du fonctionnement***/
+.steps__functioning {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.steps__functioning .steps__one {
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    line-height: 19px;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.steps__functioning .steps__two {
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    line-height: 19px;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.steps__functioning .steps__three {
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    line-height: 19px;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.steps__number {
+    border: var(--primary-color) 1px solid;
+    border-radius: 100vw;
+    background-color: var(--primary-color);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__one .steps__icon {
+    color: #7E7E7E;
+}
+
+.steps__two .steps__icon {
+    color: #7E7E7E;
+}
+
+.steps__three .steps__icon {
+    color: var(--primary-color);
+}
+
+/***style des articles***/ 
+.restaurants {
+    background-color: #F6F6F6;
+}
+.restaurants__title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 18px;
+}
+.restaurants__card-content {
+    background-color: white;
+}
+.restaurants__card {
+    object-fit: cover;
+    gap: 18px;
+}
+
+.card-text {
+    color: black;
+}
+.restaurants__card img {
+    width: 340px;
+    height: 251px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+/***style du footer***/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+}
+
+.footer__links a {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}

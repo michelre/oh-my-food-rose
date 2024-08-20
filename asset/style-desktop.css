@@ -1,0 +1,110 @@
+/***style des étapes du fonctionnement du site***/
+.steps__title {
+    margin: 20px;
+}
+.steps__functioning {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.steps {
+    padding-left: 120px;
+    padding-right: 120px;
+    gap: 25px;
+}
+.steps__one {
+    width: 335px;
+    height: 72px;
+    margin: auto;
+    margin-right: 15px;
+}
+.steps__two {
+    width: 335px;
+    height: 72px;
+    margin: auto;
+    margin-right: 15px;
+}
+.steps__three {
+    width: 335px;
+    height: 72px;
+    margin: auto;
+    margin-right: 15px;
+}
+.steps__info {
+    font-size: 16px;
+}
+
+/***style des articles***/ 
+.restaurants__title {
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 100px;
+}
+.restaurants__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    gap: 10px;
+    justify-content: space-around;
+}
+.restaurants__card img {
+    display: flex;
+    flex: 200px;
+    height: 130px;
+    width: 100%;
+}
+.restaurants__card {
+    gap: 18px;
+    position:relative;
+}
+.card__badge1 {
+    position:absolute;
+    top: 13px;
+    left: 260px;
+}
+.card__badge2 {
+    position:absolute;
+    top:13px;
+    left: 260px;
+}
+.restaurants__card-content {
+    background-color:white;
+    width: 350px;
+    height: 50px;
+}
+.card__text {
+    color:black;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+/***style du footer***/
+.footer__info {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer__links {
+    display: flex;
+}
+.footer__links a {
+    gap: 0px;
+}
+.links__icon {
+    display: flex;
+    font-size: 12px;
+} 
+.links {
+    display: flex;
+    font-size: 12px;
+    margin-left: 50px;
+}
+.footer__logo img {
+    width: 100px;
+    height: 27px;
+    margin-left: 30px;
+}

@@ -1,0 +1,409 @@
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
+
+.main-container {
+    width: 100%;
+    min-width: 320px;
+}
+
+/****** Style du header ******/
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.header__icon {
+    position: absolute;
+    top: 30px;
+    margin-left: 15px;
+}
+
+.header i {
+    background: black;
+}
+
+.header__logo img {
+    width: 197px;
+    height: 36px;
+}
+
+/****** Style de la carte de restaurants ******/
+.card__images {
+    height: 220px;
+}
+
+.card__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    margin-top: -45px;
+    z-index: 10;
+}
+
+.restaurants__card {
+    display: flex;
+    margin: 0 30px 10px 30px;
+}
+
+/***Style du contenu de restaurants__card pour le restaurant : A la française***/
+.restaurants__title {
+    height: 27px;
+    margin: 20px 0 0 50px;
+    left: 17px;
+    font-size: 28px;
+    font-style: italic;
+    font-family: shrikhand;
+    font-weight: 700;
+    line-height: 40.82px;
+    position: absolute;
+}
+
+.card__rating-1 {
+    position: relative;
+    bottom: -35px;
+    left: 250px;
+}
+
+.card__rating-2 {
+    position: relative;
+    bottom: -35px;
+    left: 226px;
+    opacity: 0;
+    overflow: hidden;
+    background: linear-gradient(#7124ce, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card__rating-2:active {
+    animation: progress__heart 1000ms forwards;
+}
+
+@keyframes progress__heart {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/***Style du contenu de restaurants__card pour les autres restaurants***/
+.restaurants__title__long {
+    height: 27px;
+    margin-top: 20px;
+    left: 50px;
+    font-size: 28px;
+    font-style: italic;
+    font-family: shrikhand;
+    font-weight: 700;
+    line-height: 40.82px;
+    position: absolute;
+}
+
+.card__rating-1__long {
+    position: relative;
+    bottom: -35px;
+    left: 250px;
+}
+
+.card__rating-2__long {
+    position: relative;
+    bottom: -35px;
+    left: 226px;
+    opacity: 0;
+    overflow: hidden;
+    background: linear-gradient(#7124ce, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card__rating-2__long:active {
+    animation: progress__heart 1000ms forwards;
+}
+
+@keyframes progress__heart {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/***Style des menus avec les animations***/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px 0 5px 0;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    border-radius: 15.04px;
+    border: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__content {
+    display: flex;
+    width: 100%;
+}
+
+.menu__description {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 10px;
+    width: 100%
+}
+
+/**.menu__p {
+    display: flex;
+    justify-content: space-between;
+}**/
+
+h3 {
+    font-size: 18px;
+    margin-right: 30px;
+}
+/**.menu:hover {**/
+.menu__description h3,
+.menu__subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100%-60px);
+}
+/**}**/
+
+.menu__price {
+    display: flex;
+    /**justify-content: space-between;**/
+    /***position: relative;
+    left: -10px;
+    bottom: -30px;***/
+    font-weight: bold;
+    color: #353535;
+    /**width: 27px;**/
+    height: 18px;
+}
+
+.menu__subtitle {
+    width: 100%;
+    height: auto;
+    font-size: 15.04px;
+    line-height: 17.63px;
+    font-weight: 300;
+}
+
+/*** Animation verte repoussant les menus vers la droite***/
+.icon__check i {
+    width: 20px;
+    height: 20px;
+    /***position: relative;
+    top: 24px;
+    right: 5px;***/
+    background: #f6f6f6;
+    border-radius: 100px;
+    justify-items: center;
+    color: #99E2D0;
+}
+
+.icon__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 72px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+   /** margin-right: -60px;**/
+    transform: translate(60px,0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu:hover .icon__check {
+    animation: check__slide 1s forwards;
+}
+@keyframes check__slide {
+    from {
+        transform:translate(60px,0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+}
+.menu:not(hover) .icon__check {
+    animation: check__slide__out 1s;
+}
+@keyframes check__slide__out {
+    from {
+        transform:translate(0,0);
+    }
+    to {
+        transform: translate(60px,0);
+    }
+}
+
+/*** Animation des menus par sections***/
+.section__entrees {
+    width: 275px;
+    height: 27px;
+    margin: 60px 0 30px 5px;
+}
+
+.section__plats,
+.section__desserts {
+    margin: 40px 0 30px 5px;
+}
+
+hr {
+    width: 40px;
+    border: var(--tertiary-color) solid 2px;
+    position: absolute;
+    top: 27px;
+    left: 5px;
+}
+
+.section__one {
+    margin: 5px;
+    position: relative;
+    animation: slidedown 1.5s ease-out;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateX(-9000px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+.section__two {
+    margin: 5px;
+    position: relative;
+    animation: slidedown 3s ease-out;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateX(-9000px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+.section__three {
+    margin: 5px;
+    position: relative;
+    animation: slidedown 4.5s ease-in;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateX(-9000px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+/***Style du bouton***/
+.command__btn {
+    border-radius: 20px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-style: none;
+    box-shadow: 0px 2px 10px 0px #525252;
+    width: 186px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    align-items: center;
+}
+
+.command__btn:active {
+    background: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.7))
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+/***style du footer***/
+.footer {
+    width: 100%;
+    background-color: #353535;
+    font-size: 16px;
+    color: white;
+    padding: 22px 0 22px 10px;
+}
+
+.footer__links a {
+    font-size: 14px;
+    color: white;
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.footer__icon {
+    width: 11px;
+    height: 13px;
+}
+
+.footer__logo img {
+    width: 139px;
+    height: 27px;
+}
+
+.footer__text1,
+.footer__text2 {
+    font-size: 16px;
+}
+
+.footer__links a {
+    font-size: 16px;
+}

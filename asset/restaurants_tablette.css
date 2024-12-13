@@ -1,176 +1,98 @@
 /****** General ***********/
-* {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #9356DC;
-    --secondary-color: #FF79DA;
-    --tertiary-color: #99E2D0;
-}
 .main-container {
     width: 100%;
     min-width: 768px;
-    box-sizing: border-box;
 }
 
-/****** Style du header ******/
-.header__page a {
-    justify-content: center;
-}
-.header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin: 20px;
-    position: relative;
-}
-.header__icon {
-    position: absolute;
-    top: 30px;
-    margin-left: 15px;
-}
-
-.header__logo img {
-    width: 197px;
-    height: 36px;
-}
-
-/****** Style du la carte de restaurants ******/
+/*** Style du la carte de restaurants ***/
 .card__images img {
-    width: 100%;
     height: 230px;
-    object-fit: cover;
-}
-
-.restaurants__title {
-    height: 27px;
-    margin-top: 20px;
-    left:17px;
-    font-size: 28px;
-    font-style: italic;
-    font-family: shrikhand;
-    font-weight: 700;
-    line-height: 40.82px;
-}
-.card__rating-1 {
-    position: relative;
-    bottom: -35px;
-    left: 170px;
-}
-.card__rating-2 {
-    position: relative;
-    top: 35px;
-    left: -546px;
 }
 .card__content {
-    background-color: #f6f6f6;
-    width: 800px;
-    height: 100%;
+    width: 600px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    position: relative;
     z-index: 3;
     padding: 10px;
     margin: auto;
 }
 .restaurants__card {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    gap: 40px;
+    margin: 10px;
 }
-.section__entrees {
-    margin: 15px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-.section__plats {
-    margin: 15px;
-    margin-top: 40px;
-    margin-bottom: 20px; 
-}
-.section__desserts {
-    margin: 15px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-.menu {
-   display: flex;
-   flex-direction: column;
-   justify-content: left;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   background-color: white;
-   width: 349px;
-   height: 72px;
-   width: 100%;
-   padding: 10px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   border-radius: 20px;
-   border: white;
-   gap: 5px;
-}
- .menu__subtitle {
-    display: flex;
-    justify-content: space-between;
- }
- .menu__price {
-    font-weight: bold;
-    color: #353535;
- }
 
-.command__btn {
-    border-radius: 20px;
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    border-bottom: var(--secondary-color);
-    border-right: var(--secondary-color);
-    width: 186px;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*** Style du contenu de restaurant__card pour le restaurant A la française ***/
+.restaurants__title {
+    margin: 20px 0 0 0;
+    left:180px;
+    font-weight: 800;
 }
-.btn {
-    display: flex;
-    justify-content: center;   
+.card__rating-1 {
+    left: 370px;
+}
+.card__rating-2 {
+    left: 346px;
+}
+.card__rating-2:hover {
+    animation: progress__heart 1000ms forwards;
+}
+/*** Style du contenu de restaurants__card pour les autres restaurants ***/
+.restaurants__title__long {
+    left:160px;
+    font-weight: 800;
+}
+.card__rating-1__long {
+    bottom: -34px;
+    left: 380px;
+}
+.card__rating-2__long {
+    bottom: -34px;
+    left: 356px;
+}
+.card__rating-2__long:hover {
+    animation: progress__heart 1000ms forwards;
+}
+
+/***Style des menus des restaurants***/
+.menu {
+    gap: 5px;
+}
+.command__btn:hover {
+    background: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.7))
 }
 
 /***style du footer***/
+.footer {
+    width: 100%;
+    height: 114px;
+    padding: 70px 25px 30px 25px;
+}
 .footer__info {
     display: flex;
     flex-direction: row-reverse;
 }
-
-.footer__logo img {
-    width: 100px;
-    height: 27px;
-    margin-left: 50px;
-}
-
 .footer__links {
     display: flex;
-    font-size: 12px;
-} 
+    margin: 0;
+}
 .footer__links a {
-    gap: 0px;
-} 
-
+    gap: 4px;
+}
+.footer__icon {
+    margin-bottom: 4px;
+}
 .links__icon {
     display: flex;
     font-size: 12px;
+    gap: 5px;
 } 
 .links {
     display: flex;
     font-size: 12px;
-    margin-left: 50px;
+    gap: 5px;
+    margin-left: 15px;
+}
+.footer__logo img {
+    width: 110px;
+    height: 30px;
+    margin-left: 40px;
 }

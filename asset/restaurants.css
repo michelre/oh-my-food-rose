@@ -43,10 +43,6 @@
     height: 36px;
 }
 
-.header__subtitle {
-    font-weight: 300;
-}
-
 /****** Style de la carte de restaurants ******/
 .card__images {
     height: 220px;

@@ -15,7 +15,7 @@
 
 .main-container {
     width: 100%;
-    min-width: 320px;
+    min-width: 375px;
 }
 
 /*Style du loader*/
@@ -129,6 +129,7 @@ input {
 .header__subtitle {
     margin: 0 10px 10px 10px;
     font-size: 18px;
+    font-weight: 300;
     display: flex;
     text-align: center;
 }
@@ -142,11 +143,11 @@ input {
     margin: 20px 0 50px 0;
     color: white;
     cursor: pointer;
-    box-shadow: 0 2px 10px 0 #525252;
-    transition: background-color 400ms;
+    /*box-shadow: 0 2px 10px 0 #525252;*/
+    transition: background-color 2000ms;
 }
 
-.header__btn:active {
+.header__btn:hover {
     background: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.7))
 }
 
@@ -156,7 +157,7 @@ input {
 }
 
 .steps__info {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -239,9 +240,10 @@ input {
 
 .card__badge1,
 .card__badge2 {
+    padding: 15px;
     position: absolute;
     top: 30px;
-    left: 220px;
+    left: 265px;
     background-color: var(--tertiary-color);
     width: 80px;
     height: 25px;
@@ -304,7 +306,7 @@ input {
     color: transparent;
 }
 
-.card__rating-2:active {
+.card__rating-2:hover {
     animation: progress__heart 1000ms forwards;
 }
 

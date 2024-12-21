@@ -240,6 +240,9 @@ input {
 
 .card__badge1,
 .card__badge2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #008766;
     padding: 15px;
     position: absolute;
     top: 30px;

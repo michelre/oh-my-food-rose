@@ -33,6 +33,12 @@
 .card__rating-2__long {
     left: 456px;
 }
+/** Mise en page des sections menus**/
+.section__one,
+.section__two,
+.section__three {
+    margin: 5px 150px 5px 150px;
+}
 
 /***style du footer***/
 .footer__links a {
@@ -44,4 +50,7 @@
 .footer__logo img {
     width: 139px;
     margin-left: 50px;
+}
+.links {
+    margin-left: 30px;
 }

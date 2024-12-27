@@ -170,10 +170,10 @@
     margin: 10px 0 5px 0;
     padding: 10px;
     background-color: white;
+    border: white;
     height: auto;
     width: 100%;
     border-radius: 15.04px;
-    border: white;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -201,7 +201,7 @@ h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: calc(100%-60px);
+    /*max-width: calc(100%-60px);*/
 }
 
 .menu__price {
@@ -229,6 +229,8 @@ h3 {
     border-radius: 100px;
     justify-items: center;
     color: #99E2D0;
+    position: relative;
+    top: -3px; 
 }
 
 .icon__check {

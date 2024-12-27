@@ -37,7 +37,6 @@
     grid-template-columns: 490px 490px;
     padding-bottom: 20px;
     margin: 0 25px 0 25px;
-    gap: ;
 }
 .restaurants__card img {
     height: 150px;

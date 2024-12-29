@@ -258,14 +258,7 @@ h3 {
 .menu:hover .menu__subtitle {
     max-width: calc(100%); 
 }
-@keyframes check__slide {
-    from {
-        transform:translate(60px,0);
-    }
-    to {
-        transform: translate(0,0);
-    }
-}
+
 .menu:not(hover) .icon__check {
     animation: check__slide__out 1s;
 }

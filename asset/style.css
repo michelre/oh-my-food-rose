@@ -246,7 +246,7 @@ input {
     padding: 15px;
     position: absolute;
     top: 30px;
-    left: 265px;
+    right: 30px;
     background-color: var(--tertiary-color);
     width: 80px;
     height: 25px;

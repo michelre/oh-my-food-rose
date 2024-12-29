@@ -40,7 +40,6 @@
 
 .header__logo img {
     width: 197px;
-    height: 36px;
 }
 
 /****** Style de la carte de restaurants ******/
@@ -63,24 +62,28 @@
     position: relative;
     margin-top: -45px;
     z-index: 10;
+    padding: 20px 0;
 }
 
 .restaurants__card {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 30px 10px 30px;
+}
+
+.restaurants__card > div {
+    position: relative;
 }
 
 /***Style du contenu de restaurants__card pour le restaurant : A la française***/
 .restaurants__title {
-    height: 27px;
     margin: 20px 0 0 50px;
-    left: 17px;
     font-size: 28px;
     font-style: italic;
     font-family: shrikhand;
     font-weight: 700;
-    line-height: 40.82px;
-    position: absolute;
+    line-height: 40.82px;    
 }
 
 .card__rating-1 {
@@ -117,28 +120,23 @@
 }
 
 /***Style du contenu de restaurants__card pour les autres restaurants***/
-.restaurants__title__long {
-    height: 27px;
-    margin-top: 20px;
-    left: 50px;
+.restaurants__title__long {    
     font-size: 28px;
     font-style: italic;
     font-family: shrikhand;
     font-weight: 700;
     line-height: 40.82px;
-    position: absolute;
+    margin-right: 24px;
 }
 
 .card__rating-1__long {
-    position: relative;
-    bottom: -35px;
-    left: 250px;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
-.card__rating-2__long {
-    position: relative;
-    bottom: -35px;
-    left: 226px;
+.card__rating-2__long {    
+    position: absolute;
+    transform: translateY(-50%);
     opacity: 0;
     overflow: hidden;
     background: linear-gradient(#7124ce, #FF79DA);
@@ -153,12 +151,12 @@
 
 @keyframes progress__heart {
     0% {
-        transform: scaleY(0);
+        transform: translateY(-50%) scaleY(0);
     }
 
     100% {
         opacity: 1;
-        transform: scaleY(1);
+        transform: translateY(-50%) scaleY(1);
     }
 }
 

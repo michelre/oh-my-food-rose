@@ -41,12 +41,10 @@
     font-weight: 800;
 }
 .card__rating-1__long {
-    bottom: -34px;
-    left: 380px;
+    
 }
 .card__rating-2__long {
-    bottom: -34px;
-    left: 356px;
+
 }
 .card__rating-2__long:hover {
     animation: progress__heart 1000ms forwards;

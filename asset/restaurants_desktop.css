@@ -24,15 +24,7 @@
     left: 430px;
 }
 /*** Style du contenu de restaurants__card pour les autres restaurants ***/
-.restaurants__title__long {
-    left:260px;
-}
-.card__rating-1__long {
-    left: 480px;
-}
-.card__rating-2__long {
-    left: 456px;
-}
+
 /** Mise en page des sections menus**/
 .section__one,
 .section__two,

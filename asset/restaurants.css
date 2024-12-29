@@ -259,7 +259,7 @@ h3 {
     max-width: calc(100%); 
 }
 
-.menu:not(hover) .icon__check {
+/*.menu:not(hover) .icon__check {
     animation: check__slide__out 1s;
 }
 @keyframes check__slide__out {
@@ -269,7 +269,7 @@ h3 {
     to {
         transform: translate(60px,0);
     }
-}
+}*/
 
 /*** Animation des menus par sections***/
 .section__entrees {
